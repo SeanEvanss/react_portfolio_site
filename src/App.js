@@ -11,11 +11,11 @@ import ReactVisibilitySensor from 'react-visibility-sensor';
 
 export default function App() {
   return (
-    <main className="text-gray-500 bg-gray-700 body-font">     
+    <main className="text-gray-400 bg-gray-700 body-font">     
       <Navbar/>
       <About/>      
-      <Projects/>
       <Skills/>
+      <Projects/>      
       <Contact/>      
     </main>
     );

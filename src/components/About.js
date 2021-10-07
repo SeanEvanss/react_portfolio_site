@@ -9,12 +9,13 @@ export default function About(){
                     <h1 className="title-font sm:text-4xl text-3xl font-medium text-white">
                         Hi I'm Sean                            
                     </h1>
-                    <h1 className="title-font sm:text-4xl text-3xl mb-10 font-medium text-yellow-500"> 
-                        I love to build amazing apps
+                    <h1 className="title-font sm:text-4xl text-3xl mt-5 mb-10 font-medium text-yellow-500"> 
+                        I love to create applications and more using programming
                     </h1>
                     <p className="mb-0 leading-relaxed">
-                        Hi I'm Sean and I'm currently working as a backend Software Engineer at PayPal Singapore. I'm wellversed in software enginner (obviosuly) as well as machine learning. 
-                        I'm most passionate about using technology in all forms to create cool stuff.
+                        Hi I'm Sean and I'm currently working as a backend Software Engineer at PayPal Singapore.<br/> 
+                    
+                        I just love finding applications for my programming to create cool stuff from games, web apps and so on.
                     </p>
                     <div className="flex justify-center mt-8">
                         <a href="#contact"
@@ -27,7 +28,7 @@ export default function About(){
                         </a>
                     </div>
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <div className="lg:max-w-lg lg:w-full md:w-1/2 sm:w-1/4 w-5/6">
                     <img
                         className="object-cover object-center rounded"
                         alt="hero"
