@@ -22,7 +22,7 @@ export const projects = [
         subtitle: "Python, Mediapipe",
         description: "A Python application taking advantage of the Mediapipe library. Can detect when a certain offensive gesture is made.",
         image_link: cursing,
-        link: "https://github.com/SeanEvanss/Vespertine",
+        link: "https://github.com/SeanEvanss/Cursing-finger-detection",
         key:1
     }
 ];

@@ -1,7 +1,7 @@
 main {
     background: linear-gradient(-45deg, #4b5058, #374151, #040a16);
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 7s ease infinite;
     height: 100%;
     overscroll-behavior: auto;
 }

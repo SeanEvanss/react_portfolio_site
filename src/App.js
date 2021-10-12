@@ -7,9 +7,6 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import "./App.css"
 
-import { Spring } from 'react-spring/renderprops';
-import ReactVisibilitySensor from 'react-visibility-sensor';
-
 export default function App() {
   return (
 
