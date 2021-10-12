@@ -5,18 +5,21 @@ import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import "./App.css"
 
 import { Spring } from 'react-spring/renderprops';
 import ReactVisibilitySensor from 'react-visibility-sensor';
 
 export default function App() {
   return (
-    <main className="text-gray-400 bg-gray-700 body-font">     
-      <Navbar/>
-      <About/>      
-      <Skills/>
-      <Projects/>      
-      <Contact/>      
-    </main>
-    );
+
+        <main className="text-gray-400 bg-gray-700 body-font" >
+          <Navbar />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+
+  );
 }
