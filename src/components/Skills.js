@@ -1,6 +1,7 @@
 import {BadgeCheckIcon, ChipIcon} from "@heroicons/react/solid"
 import { skills } from "./data";
 import React, { Component } from 'react'
+import { Controller, Scene } from "react-scrollmagic";
 
 export default function Skills() {    
     return (
