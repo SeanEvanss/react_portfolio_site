@@ -10,14 +10,18 @@ import "./App.css"
 
 export default function App() {
   return (
-        <main className="text-gray-400 bg-gray-700 body-font" >
-          <Navbar />
-          <About />
-          <Skills />
-          <Projects />
-          <ScrollMagic/>
-          <Contact />
-        </main>
+    <html>
+      <main className="text-gray-400 bg-gray-700 body-font">
+        <Navbar />
+        <About />
+        <Skills />
+        <Projects />
+        <ScrollMagic />
+        <Contact />
+      </main>
+    </html>
+
+
 
   );
 }

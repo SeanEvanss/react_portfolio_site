@@ -20,26 +20,24 @@ export default function ScrollMagic() {
                             </div>
                         </Scene>
                         <div>
-                            <h2 className="text-3xl text-center text-white">
-                                Let's see, what do they normally do now ? 
+                            <h2 className="text-3xl text-center text-white pt-10">
+                                Let's see, what do they normally do now ?<br/>
                                 Maybe something like this-
 
                             </h2>
                         </div>
-                        <Scene
-                            duration={1500}
-                            triggerHook={0.25}
-                            pin={{ pushFollowers: true }}>
 
+                        <Scene
+                            duration={800}
+                            triggerHook={0.50}
+                            pin={{ pushFollowers: false }}>
                             <Timeline
                                 target={
-                                    <h1 className="text-8xl text-center text-white">
-                                        Innovation
-                                    </h1>
-                                }>
+                                    <p className="text-8xl text-center text-white pt-10"> " Innovation " </p>}>
                                 <Tween from={{ opacity: -1 }} to={{ opacity: 1 }} />
                             </Timeline>
                         </Scene>
+
                     </Controller>
                 </div>
 

@@ -3,7 +3,10 @@ main {
     background-size: 400% 400%;
     animation: gradient 8s ease infinite;
     height: 100%;
-    overscroll-behavior: auto;
+}
+
+html {
+    background-color: #424852;
 }
 
 @keyframes gradient {
