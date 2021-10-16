@@ -20,8 +20,14 @@ export default function App() {
         <Contact />
       </main>
     </html>
-
-
-
   );
 }
+
+/*
+ <Navbar />
+        <About />
+        <Skills />
+        <Projects />
+        <ScrollMagic />
+        <Contact />
+        */
