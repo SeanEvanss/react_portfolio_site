@@ -1,3 +1,11 @@
-#profile {
+.huge {
+    border: 0px solid yellow;
+}
+
+.mainText {
+    border: 0px solid yellow;
+}
+
+.profile {
     border: 0px solid yellow;
 }

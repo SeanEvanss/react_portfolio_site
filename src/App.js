@@ -13,10 +13,9 @@ export default function App() {
     <html>
       <main className="text-gray-400 bg-gray-700 body-font">
         <Navbar />
-        <About />
+        <ScrollMagic/>
         <Skills />
-        <Projects />
-        <ScrollMagic />
+        <Projects/>
         <Contact />
       </main>
     </html>
