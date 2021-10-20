@@ -1,5 +1,6 @@
 import './index.css';
 import React from 'react';
+import Landing from "./components/Landing"
 import About from './components/About';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
@@ -12,21 +13,25 @@ export default function App() {
   return (
     <html>
       <main className="text-gray-400 bg-gray-700 body-font">
-        <Navbar />
+        
+        <Landing/>
         <ScrollMagic/>
         <Skills />
-        <Projects/>
+        <Projects />
         <Contact />
       </main>
+
     </html>
   );
 }
 
 /*
- <Navbar />
-        <About />
+<main className="text-gray-400 bg-gray-700 body-font">
+        <Navbar/>
+        <About/>
         <Skills />
-        <Projects />
-        <ScrollMagic />
+        <Projects/>
+        <ScrollMagic/>
         <Contact />
-        */
+      </main>
+*/

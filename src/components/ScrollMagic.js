@@ -6,43 +6,48 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDownIcon } from '@heroicons/react/solid';
 
 
-export default function ScrollMagic() {
+export default function ScrollMagic() {    
 
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
 
     useEffect(() => {
         const currElement = ref.current;
-
         gsap.from(
             currElement.querySelector("#profile"),
             {
                 y: 200,
-                duration: 1,
+                duration: 2,
                 opacity: 0,
                 delay: 0,
-                ease: "none",
+                ease: "linear",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#main_trigger"),
+                    trigger: currElement.querySelector("#text_1"),
                     markers: false,
+                    scrub: true,
+                    start: "top center",
+                    end: "bottom center"
                 }
             });
     }, []);
 
     useEffect(() => {
         const currElement = ref.current;
-
         gsap.from(
             currElement.querySelector("#text_1"),
             {
-                x: -200,
-                duration: 1,
+                x: -500,
+                duration: 3,
                 opacity: 0,
+                scale:1,
                 delay: 0.5,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#main_trigger"),
+                    trigger: currElement.querySelector("#text_1"),
                     markers: false,
+                    scrub: true,
+                    start: "top center",
+                    end: "bottom center"
 
                 }
             });
@@ -50,18 +55,20 @@ export default function ScrollMagic() {
 
     useEffect(() => {
         const currElement = ref.current;
-
         gsap.from(
             currElement.querySelector("#text_2"),
             {
-                x: -200,
-                duration: 1,
+                x: -400,
+                duration: 3,
                 opacity: 0,
                 delay: 1,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#main_trigger"),
+                    trigger: currElement.querySelector("#text_1"),
                     markers: false,
+                    scrub: true,
+                    start: "top center",
+                    end: "bottom center"
 
                 }
             });
@@ -69,18 +76,20 @@ export default function ScrollMagic() {
 
     useEffect(() => {
         const currElement = ref.current;
-
         gsap.from(
             currElement.querySelector("#text_3"),
             {
-                x: -200,
-                duration: 1,
+                x: -300,
+                duration: 3,
                 opacity: 0,
                 delay: 1.5,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#main_trigger"),
+                    trigger: currElement.querySelector("#text_1"),
                     markers: false,
+                    scrub: true,
+                    start: "top center",
+                    end: "bottom center"
 
                 }
             });
@@ -88,23 +97,24 @@ export default function ScrollMagic() {
 
     useEffect(() => {
         const currElement = ref.current;
-
         gsap.from(
             currElement.querySelector("#buttons_1"),
             {
                 x: -200,
-                duration: 1,
+                duration: 3,
                 opacity: 0,
                 delay: 2,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#main_trigger"),
+                    trigger: currElement.querySelector("#text_1"),
                     markers: false,
+                    scrub: true,
+                    start: "top center",
+                    end: "bottom center"
 
                 }
             });
     }, []);
-
 
     return (
         <section id="ScrollMagic" ref={ref}>
@@ -119,7 +129,7 @@ export default function ScrollMagic() {
                     </h1>
                     <div id="text_3">
                         <p id="mainText" className="mb-0 leading-relaxed">
-                            I'm currently working as a backend Software Engineer at PayPal Singapore.<br />
+                            I'm currently working as a backend Software Engineer at <em>PayPal Singapore</em>.<br />
 
                             I just love finding applications for my programming to create cool stuff from games, web apps and so on.
                         </p>
@@ -146,11 +156,7 @@ export default function ScrollMagic() {
                         (This is how I look, just with, well, black hair)
                     </text>
                 </div>
-
             </div >
-            <div className="flex justify-center">
-                <ArrowDownIcon className="animate-bounce w-8 h-8" />
-            </div>
         </section>
     )
 }
