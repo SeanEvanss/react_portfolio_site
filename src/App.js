@@ -13,7 +13,7 @@ export default function App() {
   return (
     <html>
       <main className="text-gray-400 bg-gray-700 body-font">
-        
+        <Navbar />
         <Landing/>
         <ScrollMagic/>
         <Skills />
