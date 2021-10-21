@@ -5,8 +5,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDownIcon } from '@heroicons/react/solid';
 
-
-export default function ScrollMagic() {    
+export default function ScrollMagic() {
 
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
@@ -22,11 +21,11 @@ export default function ScrollMagic() {
                 delay: 0,
                 ease: "linear",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#text_1"),
+                    trigger: currElement.querySelector("#main_trigger"),
                     markers: false,
                     scrub: true,
-                    start: "top center",
-                    end: "bottom center"
+                    start: "top center+=20%",
+                    end: "bottom center+=20%"
                 }
             });
     }, []);
@@ -39,15 +38,15 @@ export default function ScrollMagic() {
                 x: -500,
                 duration: 3,
                 opacity: 0,
-                scale:1,
+                scale: 1,
                 delay: 0.5,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#text_1"),
+                    trigger: currElement.querySelector("#main_trigger"),
                     markers: false,
                     scrub: true,
-                    start: "top center",
-                    end: "bottom center"
+                    start: "top center+=20%",
+                    end: "bottom center+=20%"
 
                 }
             });
@@ -64,11 +63,11 @@ export default function ScrollMagic() {
                 delay: 1,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#text_1"),
+                    trigger: currElement.querySelector("#main_trigger"),
                     markers: false,
                     scrub: true,
-                    start: "top center",
-                    end: "bottom center"
+                    start: "top center+=20%",
+                    end: "bottom center+=20%"
 
                 }
             });
@@ -85,11 +84,11 @@ export default function ScrollMagic() {
                 delay: 1.5,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#text_1"),
+                    trigger: currElement.querySelector("#main_trigger"),
                     markers: false,
                     scrub: true,
-                    start: "top center",
-                    end: "bottom center"
+                    start: "top center+=20%",
+                    end: "bottom center+=20%"
 
                 }
             });
@@ -106,11 +105,11 @@ export default function ScrollMagic() {
                 delay: 2,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#text_1"),
+                    trigger: currElement.querySelector("#main_trigger"),
                     markers: false,
                     scrub: true,
-                    start: "top center",
-                    end: "bottom center"
+                    start: "top center+=20%",
+                    end: "bottom center+=20%"
 
                 }
             });
@@ -120,19 +119,21 @@ export default function ScrollMagic() {
         <section id="ScrollMagic" ref={ref}>
 
             <div className="container mx-auto px-10 py-10 flex md:flex-row flex-col items-center">
-                <div id="main_trigger" className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 id="text_1" className="title-font lg:text-6xl text-3xl font-medium text-white">
-                        Hi I'm Sean
-                    </h1>
-                    <h1 id="text_2" className="title-font lg:text-4xl text-3xl mt-5 mb-10 font-medium text-yellow-500">
-                        I love to create applications and more using programming
-                    </h1>
-                    <div id="text_3">
-                        <p id="mainText" className="mb-0 leading-relaxed">
-                            I'm currently working as a backend Software Engineer at <em>PayPal Singapore</em>.<br />
+                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <div id="main_trigger">
+                        <h1 id="text_1" className="title-font lg:text-6xl text-3xl font-medium text-white">
+                            Hi I'm Sean
+                        </h1>
+                        <h1 id="text_2" className="title-font lg:text-4xl text-3xl mt-5 xl:mb-10 mb-5 font-medium text-yellow-500">
+                            I love to create applications and more using programming
+                        </h1>
+                        <div id="text_3">
+                            <p id="mainText" className="mb-0 leading-relaxed">
+                                I'm currently working as a backend Software Engineer at <em>PayPal Singapore</em>.<br />
 
-                            I just love finding applications for my programming to create cool stuff from games, web apps and so on.
-                        </p>
+                                I love finding applications for my programming to create cool stuff from games, web apps and so on.
+                            </p>
+                        </div>
                     </div>
 
                     <div id="buttons_1" className="flex justify-center mt-8">
@@ -146,7 +147,7 @@ export default function ScrollMagic() {
                         </a>
                     </div>
                 </div>
-                <div id="profile" className="lg:max-w-lg lg:w-f md:w-1/2 sm:w-1/4 w-5/6 flex flex-col text-center">
+                <div id="profile" className="lg:max-w-lg lg:w-f md:w-1/2 lg:mt-5 sm:w-1/4 w-5/6 flex flex-col text-center">
                     <img
                         className="object-cover object-center rounded"
                         alt="Profile pic loading..."
