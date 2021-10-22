@@ -1,5 +1,7 @@
 import vesp from "./resources/vespertine.gif"
 import cursing from "./resources/cursing.gif"
+import scrapper from "./resources/scrapper.gif"
+import flappy from "./resources/flappy.gif"
 
 export const skills = [
     "C/C++", "Java",
@@ -20,10 +22,26 @@ export const projects = [
     {
         title: "Cursing detection",
         subtitle: "Python, Mediapipe",
-        description: "A Python application taking advantage of the Mediapipe library. Can detect when a certain offensive gesture is made.",
+        description: "A Python application using the Mediapipe library to detect when a certain offensive gesture is made.",
         image_link: cursing,
         link: "https://github.com/SeanEvanss/Cursing-finger-detection",
         key:1
-    }
+    },
+    {
+        title: "Web scrapper",
+        subtitle: "NodeJS, Axios",
+        description: "A web scapper script I wrote using NodeJS that will be hooked into a database. WIP.",
+        image_link: scrapper,
+        link: "https://github.com/SeanEvanss/nodejs_web_scrapper",
+        key:3
+    },
+    {
+        title: "NEAT Flappy bird",
+        subtitle: "Python, NEAT",
+        description: "A python script showing how a neural evolutionary network (NEAT) can be applied.",
+        image_link: flappy,
+        link: "https://github.com/SeanEvanss/flappy_bird_NEAT",
+        key:4
+    },
 ];
 

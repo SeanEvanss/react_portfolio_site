@@ -21,8 +21,21 @@ export default function Projects() {
                     </div>
                     <div className="flex flex-wrap m-4">
                         {projects.map((project) => (
-                            <a href={project.link} key={project.key} className="sm:w-1/2 w-100 p-4">
-                                <img alt="loading..." src={project.image_link}/>
+                            <a href={project.link} key={project.key} className="md:w-1/2 w-100 p-4">
+                                <div className="flex relative">
+                                    <img alt="loading..." className="absolute inset-0 w-full h-full object-cover object-center" src={project.image_link} />
+                                    <div className="px-10 py-8 relative z-5 w-full h-full border-4 border-gray-800 bg-gray-900 opacity-90 hover:opacity-0">
+                                        <h2 className="text-yellow-500">
+                                            {project.subtitle}
+                                        </h2>
+                                        <h1 className="title-font text-lg font-medium text-white mb-3">
+                                            {project.title}
+                                        </h1>
+                                        <p className="leading-relaxed">
+                                            {project.description}
+                                        </p>
+                                    </div>
+                                </div>
                             </a>
                         ))}
                     </div>
