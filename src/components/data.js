@@ -13,8 +13,8 @@ export const skills = [
 export const projects = [
     {
         title: "Vespertine",
-        subtitle: "Android",
-        description: "A simple Android application consuming data.gov and Google API. Focused on nightlife functions such as displayng all neray taxis locations as well as parking lots left at all malls and public carparks",
+        subtitle: "Android Studio, Java",
+        description: "An Android application consuming data.gov and Google API. Focused on nightlife functions such as displayng all neray taxis locations as well as parking lots left at all malls and public carparks",
         image_link: vesp,
         link: "https://github.com/SeanEvanss/Vespertine",
         key:0
@@ -22,23 +22,23 @@ export const projects = [
     {
         title: "Cursing detection",
         subtitle: "Python, Mediapipe",
-        description: "A Python application using the Mediapipe library to detect when a certain offensive gesture is made.",
+        description: "A Simple Python application making use of the Mediapipe library. The script is able to detect when a certain offensive gesture is made.",
         image_link: cursing,
         link: "https://github.com/SeanEvanss/Cursing-finger-detection",
         key:1
     },
     {
         title: "Web scrapper",
-        subtitle: "NodeJS, Axios",
-        description: "A web scapper script I wrote using NodeJS that will be hooked into a database. WIP.",
+        subtitle: "NodeJS, ExpressJS, Axios",
+        description: "A web scapper script I wrote using NodeJS that will be hooked into a database (eventually). Currently WIP.",
         image_link: scrapper,
         link: "https://github.com/SeanEvanss/nodejs_web_scrapper",
         key:3
     },
     {
         title: "NEAT Flappy bird",
-        subtitle: "Python, NEAT",
-        description: "A python script showing how a neural evolutionary network (NEAT) can be applied.",
+        subtitle: "Python, pygame, NEAT",
+        description: "A python script showing how a neural evolutionary network (NEAT) can be applied. We demonstrate the utility of the NEAT library with flappy bird created using pygame.",
         image_link: flappy,
         link: "https://github.com/SeanEvanss/flappy_bird_NEAT",
         key:4
