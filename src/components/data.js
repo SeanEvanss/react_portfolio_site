@@ -20,7 +20,7 @@ export const projects = [
         key:0
     },
     {
-        title: "Web scrapper",
+        title: "Web scraper",
         subtitle: "NodeJS, ExpressJS, Axios",
         description: "A web scapper script I wrote using NodeJS that will be hooked into a database (eventually). Currently WIP.",
         image_link: scrapper,
@@ -38,7 +38,7 @@ export const projects = [
     {
         title: "NEAT Flappy bird",
         subtitle: "Python, pygame, NEAT",
-        description: "A python script showing how a neural evolutionary network (NEAT) can be applied. We demonstrate the utility of the NEAT library with flappy bird created using pygame.",
+        description: "A python script showing how a neural evolutionary network (NEAT) can be applied. We demonstrate the utility of the NEAT library with flappy bird created with pygame.",
         image_link: flappy,
         link: "https://github.com/SeanEvanss/flappy_bird_NEAT",
         key:3
