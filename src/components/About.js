@@ -5,7 +5,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDownIcon } from '@heroicons/react/solid';
 
-export default function ScrollMagic() {
+export default function About() {
 
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
