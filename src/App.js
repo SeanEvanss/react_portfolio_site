@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-import ScrollMagic from './components/About';
+import About from './components/About';
 import "./App.css"
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
       <main className="text-gray-400 bg-gray-700 body-font">
         <Navbar />
         <Landing/>
-        <ScrollMagic/>
+        <About/>
         <Skills />
         <Projects />
         <Contact />

@@ -1,9 +1,8 @@
-import React, { Component, useRef, useEffect } from 'react'
+import React, {useRef, useEffect } from 'react'
 import "./styles/ScrollMagic.css"
 import Profile from './resources/profile.jpeg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowDownIcon } from '@heroicons/react/solid';
 
 export default function About() {
 

@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { ArrowRightIcon } from '@heroicons/react/solid'
 
-export default class Navbar extends Component {
-    render() {
+export default function Navbar(){
+
         return (
             <header className="bg-gray-800 md:sticky top-0 z-10">
                 <div className="flex xl:p-6 md:p-3 flex-row items-center">
@@ -30,5 +30,5 @@ export default class Navbar extends Component {
                 </div>
             </header>
         )
-    }
+    
 }

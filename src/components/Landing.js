@@ -1,12 +1,9 @@
 import React, { useRef, useEffect } from 'react'
-import Profile from './resources/profile.jpeg';
 import "./styles/Landing.css"
 import background from './resources/background.jpeg'
 import { ArrowDownIcon } from '@heroicons/react/solid';
 
-
 export default function Landing() {
-
     return (
         <section id="landing" >
             <div className="flex flex-col h-screen justify-center items-center" style={{ backgroundImage: `url(${background})`, backgroundSize: "cover" }}>
@@ -22,8 +19,6 @@ export default function Landing() {
                     <ArrowDownIcon className="animate-bounce w-20 h-20" />
                 </div>
             </div>
-
         </section>
     )
-
 }
