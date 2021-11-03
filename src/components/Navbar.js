@@ -2,6 +2,7 @@ import React from 'react'
 import { ArrowRightIcon } from '@heroicons/react/solid'
 
 export default function Navbar(){
+        
 
         return (
             <header className="bg-gray-800 md:sticky top-0 z-10">
