@@ -21,7 +21,7 @@ export default function Skills() {
                 delay: 0,
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_skill"),
-                    markers: true,
+                    markers: false,
                     scrub: true,
                     start: "top center+=30%",
                     end: "bottom center+=30%"
