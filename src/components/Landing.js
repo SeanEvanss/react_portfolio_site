@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import "./styles/Landing.css"
 import background from './resources/background.jpeg'
 import { ArrowDownIcon } from '@heroicons/react/solid';
