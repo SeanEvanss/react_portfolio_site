@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { InboxIcon } from "@heroicons/react/solid";
 
 export default function Contact() {
     const [name, setName] = useState("");
@@ -29,7 +30,7 @@ export default function Contact() {
                 'apikey': process.env.REACT_APP_API_KEY,
             },
             body: JSON.stringify({ name, email, message })
-        };        
+        };
         //The actual API request based on our supplied URL and request options
         fetch(URL, requestOptions)
             .then(response => alert("Message sent! I will reach out to you ASAP"))
@@ -40,14 +41,20 @@ export default function Contact() {
 
     return (
         <section id="contact">
-            <div className="container mx-auto px-5 py-10 flex justify-center">
+            <div className="container mx-auto px-5 py-5 flex justify-center">
                 <form
                     className="lg:w-2/3 md:w-1/2 flex flex-col w-full md:py-8 mt-8 md:mt-0 items-center"
                     title="form"
                     onSubmit={handleSubmit}>
-                    <h2 className="text-white sm:text-4xl text-3xl mb-5 font-medium title-font" >
+                    <InboxIcon className="w-20 text-gray-200" />
+                    <h2 className="text-gray-200 sm:text-4xl text-3xl mb-5 font-medium title-font" >
                         Contact me
                     </h2>
+                    <p className="text-center"> 
+                        Thanks for taking the time to reach out! I always appreciate any opportunities or even potential collaborations.
+                        <br />
+                        Feel free to drop your contact info and message below and I will get back to you as soon as I can.
+                    </p>
                     <div className="flex flex-col w-full justify-center">
                         <h3 className="text-white md:mr-5 leading-7">
                             Name:
@@ -81,7 +88,7 @@ export default function Contact() {
                             onChange={(e) => { setMessage(e.target.value) }} />
 
                     </div>
-                    <button type="submit" className="py-1 px-3 rounded hover:bg-gray-900 hover:text-white focus:outline-none">
+                    <button type="submit" className="py-2 px-4 rounded text-xl hover:bg-gray-900 hover:text-white focus:outline-none">
                         Submit
                     </button>
                 </form>
