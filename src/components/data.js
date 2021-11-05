@@ -5,9 +5,10 @@ import flappy from "./resources/flappy.gif"
 
 export const skills = [
     "C/C++", "Java",
-    "ReactJS", "Android Studio",
-    "Flutter",
-    "Python", "Tensroflow/Keras", "Unity"
+    "ReactJS", "NodeJS+Express",
+    "MongoDB","Android Studio",
+    "Flutter", "Python", 
+    "Tensroflow/Keras", "Unity"
 ];
 
 export const projects = [

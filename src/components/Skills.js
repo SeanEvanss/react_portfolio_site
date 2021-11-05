@@ -43,7 +43,7 @@ export default function Skills() {
                     (WIP)
                 </p>
             </div>
-            <div id="main_skill" className="flex flex-wrap py-5 lg:w-4/5 sm:mx-auto sm:mb-2 mx-2">
+            <div id="main_skill" className="flex flex-wrap py-5 lg:w-4/5 sm:mx-auto mb-2 md:mb-10 mx-2">
                 {skills.map((skill) => (
                     <div id="skill" key={skill} className="p-2 sm:w-1/3 w-full">
                         <div className="bg-gray-800 rounded flex p-3 h-full items-center justify-center ">
