@@ -24,8 +24,8 @@ export default function About() {
                     trigger: currElement.querySelector("#main_trigger"),
                     markers: false,
                     scrub: true,
-                    start: "top center+=40%",
-                    end: "bottom center+=40%"
+                    start: "top center+=20%",
+                    end: "bottom center+=20%"
                 }
             });
     }, []);
@@ -42,11 +42,11 @@ export default function About() {
                 delay: 0.5,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#profile"),
+                    trigger: currElement.querySelector("#main_trigger"),
                     markers: false,
                     scrub: true,
-                    start: "top center+=40%",
-                    end: "bottom center+=40%"
+                    start: "top center+=20%",
+                    end: "bottom center+=20%"
 
                 }
             });
@@ -63,11 +63,11 @@ export default function About() {
                 delay: 1,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#profile"),
+                    trigger: currElement.querySelector("#main_trigger"),
                     markers: false,
                     scrub: true,
-                    start: "top center+=40%",
-                    end: "bottom center+=40%"
+                    start: "top center+=20%",
+                    end: "bottom center+=20%"
 
                 }
             });
@@ -84,11 +84,11 @@ export default function About() {
                 delay: 1.5,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#profile"),
+                    trigger: currElement.querySelector("#main_trigger"),
                     markers: false,
                     scrub: true,
-                    start: "top center+=40%",
-                    end: "bottom center+=40%"
+                    start: "top center+=20%",
+                    end: "bottom center+=20%"
 
                 }
             });
@@ -105,11 +105,11 @@ export default function About() {
                 delay: 2,
                 ease: "none",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#profile"),
+                    trigger: currElement.querySelector("#main_trigger"),
                     markers: false,
                     scrub: true,
-                    start: "top center+=40%",
-                    end: "bottom center+=40%"
+                    start: "top center+=20%",
+                    end: "bottom center+=20%"
 
                 }
             });
@@ -147,7 +147,7 @@ export default function About() {
                         </a>
                     </div>
                 </div>
-                <div id="profile" className="lg:max-w-lg md:w-1/2 lg:mt-5 sm:w-1/4 w-5/6 flex flex-col text-center">
+                <div id="profile" className="lg:max-w-lg md:w-1/3 lg:mt-5 sm:w-1/4 w-5/6 flex flex-col text-center">
                     <img
                         className="object-cover object-center rounded"
                         alt="Profile pic loading..."
