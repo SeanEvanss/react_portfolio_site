@@ -1,0 +1,7 @@
+    #landing_words {
+        background-image: linear-gradient(60deg, #ff9900, #d6ba8f);
+        background-clip: text;
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+        color: transparent;
+    }

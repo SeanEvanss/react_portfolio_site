@@ -1,7 +1,6 @@
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid"
 import { skills } from "./data";
 import React, { useRef, useEffect } from 'react'
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -33,17 +32,17 @@ export default function Skills() {
         <section id="skills" ref={ref}>
             <div className="container px-20 py-10 mx-auto">
                 <div className="text-center mb-10">
-                    <ChipIcon className="w-20 inline-block mb-4" />
-                    <h1 className="sm:text-4xl text-3xl font-medium text-white-200">
+                    <ChipIcon className="w-20 text-gray-200 inline-block mb-4" />
+                    <h1 className="sm:text-4xl text-3xl font-medium text-white">
                         Skills &amp; Frameworks
                     </h1>
                 </div>
                 <p className="text-center leading-relaxed">
-                    Software enginnering, deep learning, web deveopment<br />
-                    (WIP)
+                    My skill set spans across SWE (my main focus), but I also have a lot of experience with other technologies such as deep learning, mobile dev and web dev.
+                    
                 </p>
             </div>
-            <div id="main_skill" className="flex flex-wrap py-5 lg:w-4/5 sm:mx-auto mb-2 md:mb-10 mx-2">
+            <div id="main_skill" className="flex flex-wrap py-2 lg:w-4/5 sm:mx-auto mb-2 md:mb-10 mx-2">
                 {skills.map((skill) => (
                     <div id="skill" key={skill} className="p-2 sm:w-1/3 w-full">
                         <div className="bg-gray-800 rounded flex p-3 h-full items-center justify-center ">

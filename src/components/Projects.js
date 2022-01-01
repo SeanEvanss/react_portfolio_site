@@ -1,6 +1,7 @@
 import React from 'react'
 import { projects } from './data';
 import { CodeIcon } from "@heroicons/react/solid";
+import "./styles/Projects.css"
 
 
 export default function Projects() {
@@ -13,11 +14,11 @@ export default function Projects() {
                         <h1 className="text-4xl font-medium text-gray-200">
                             Projects I've worked on
                         </h1>
-                        <p className="mt-10 text-center">
-                            I've worked on both web based as well as mobile applications<br />
-                            I've developed Android, iOS as well as web applications. Additioally, I have also created several standalone (python,NodeJS) projects.
+                        <p className="mt-10 text-center text-gray-200">
+                            Below are some of the projects I've worked on (and want to shwo off). There are plenty more on my github, so please check it out to get a better idea of the projects I'v worked on.<br />
+                            I've mainly developed Android, iOS as well as web applications. Additioally, I have also created several standalone (python,NodeJS) projects.
                         </p>
-                        <p className="mt-10 text-center text-gray-300">
+                        <p id="landing_words" className="mt-10 text-center text-gray-300 text-xl ">
                             Hover over to see the project in action and click on project to be redirected to the project's github page.
                         </p>
 
