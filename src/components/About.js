@@ -1,4 +1,6 @@
 import React, {useRef, useEffect } from 'react'
+import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid"
+import { SocialIcon } from 'react-social-icons';
 import "./styles/ScrollMagic.css"
 import Profile from './resources/profile.jpeg';
 
@@ -145,6 +147,7 @@ export default function About() {
                             className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-900 hover:text-white rounded text-lg">
                             See My Past Work
                         </a>
+                        <SocialIcon url='https://www.linkedin.com/in/sean-tang-s96/' className='ml-4 inline-flex'/>
                     </div>
                 </div>
                 <div id="profile" className="lg:max-w-lg md:w-1/3 lg:mt-5 sm:w-1/4 w-5/6 flex flex-col text-center">
