@@ -11,19 +11,21 @@ export default function About() {
 
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
+    
 
     useEffect(() => {
         const currElement = ref.current;
         gsap.from(
             currElement.querySelector("#profile"),
             {
-                y: 200,
+                x: 200,
                 duration: 2,
                 opacity: 0,
                 delay: 0,
                 ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
+                    
                     markers: false,
                     scrub: true,
                     start: "top center+=20%",
@@ -42,9 +44,10 @@ export default function About() {
                 opacity: 0,
                 scale: 1,
                 delay: 0.5,
-                ease: "none",
+                ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
+                    
                     markers: false,
                     scrub: true,
                     start: "top center+=20%",
@@ -63,9 +66,10 @@ export default function About() {
                 duration: 3,
                 opacity: 0,
                 delay: 1,
-                ease: "none",
+                ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
+                    
                     markers: false,
                     scrub: true,
                     start: "top center+=20%",
@@ -84,9 +88,10 @@ export default function About() {
                 duration: 3,
                 opacity: 0,
                 delay: 1.5,
-                ease: "none",
+                ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
+                    
                     markers: false,
                     scrub: true,
                     start: "top center+=20%",
@@ -105,9 +110,10 @@ export default function About() {
                 duration: 3,
                 opacity: 0,
                 delay: 2,
-                ease: "none",
+                ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
+                    
                     markers: false,
                     scrub: true,
                     start: "top center+=20%",
