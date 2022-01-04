@@ -1,5 +1,4 @@
-import React, {useRef, useEffect } from 'react'
-import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid"
+import React, { useRef, useEffect } from 'react'
 import { SocialIcon } from 'react-social-icons';
 import "./styles/ScrollMagic.css"
 import Profile from './resources/profile.jpeg';
@@ -7,16 +6,19 @@ import Profile from './resources/profile.jpeg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
+
 export default function About() {
+
 
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
-    
+
 
     useEffect(() => {
         const currElement = ref.current;
         gsap.from(
-            currElement.querySelector("#profile"),
+            "#profile",
             {
                 x: 200,
                 duration: 2,
@@ -24,20 +26,16 @@ export default function About() {
                 delay: 0,
                 ease: "linear",
                 scrollTrigger: {
-                    trigger: currElement.querySelector("#main_trigger"),
-                    
+                    trigger: "#main_trigger",
                     markers: false,
                     scrub: true,
-                    start: "top center+=20%",
+                    start: "top 90%",
                     end: "bottom center+=20%"
                 }
             });
-    }, []);
 
-    useEffect(() => {
-        const currElement = ref.current;
         gsap.from(
-            currElement.querySelector("#text_1"),
+            "#text_1",
             {
                 x: -500,
                 duration: 3,
@@ -47,20 +45,15 @@ export default function About() {
                 ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
-                    
                     markers: false,
                     scrub: true,
-                    start: "top center+=20%",
+                    start: "top 90%",
                     end: "bottom center+=20%"
 
                 }
             });
-    }, []);
-
-    useEffect(() => {
-        const currElement = ref.current;
         gsap.from(
-            currElement.querySelector("#text_2"),
+            "#text_2",
             {
                 x: -400,
                 duration: 3,
@@ -69,20 +62,16 @@ export default function About() {
                 ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
-                    
                     markers: false,
                     scrub: true,
-                    start: "top center+=20%",
+                    start: "top 90%",
                     end: "bottom center+=20%"
 
                 }
             });
-    }, []);
 
-    useEffect(() => {
-        const currElement = ref.current;
         gsap.from(
-            currElement.querySelector("#text_3"),
+            "#text_3",
             {
                 x: -300,
                 duration: 3,
@@ -91,20 +80,15 @@ export default function About() {
                 ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
-                    
                     markers: false,
                     scrub: true,
-                    start: "top center+=20%",
+                    start: "top 90%",
                     end: "bottom center+=20%"
 
                 }
             });
-    }, []);
-
-    useEffect(() => {
-        const currElement = ref.current;
         gsap.from(
-            currElement.querySelector("#buttons_1"),
+            "#buttons_1",
             {
                 x: -200,
                 duration: 3,
@@ -113,15 +97,15 @@ export default function About() {
                 ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
-                    
                     markers: false,
                     scrub: true,
-                    start: "top center+=20%",
+                    start: "top 90%",
                     end: "bottom center+=20%"
 
                 }
             });
     }, []);
+
 
     return (
         <section id="ScrollMagic" ref={ref}>
@@ -153,7 +137,7 @@ export default function About() {
                             className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-900 hover:text-white rounded text-lg">
                             See My Past Work
                         </a>
-                        <SocialIcon url='https://www.linkedin.com/in/sean-tang-s96/' className='ml-4 inline-flex'/>
+                        <SocialIcon url='https://www.linkedin.com/in/sean-tang-s96/' className='ml-4 inline-flex' />
                     </div>
                 </div>
                 <div id="profile" className="lg:max-w-lg md:w-1/3 lg:mt-5 sm:w-1/4 w-5/6 flex flex-col text-center">
