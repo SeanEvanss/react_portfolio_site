@@ -8,18 +8,25 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 export default function Landing() {
-    gsap.timeline({
+    gsap.registerPlugin(ScrollTrigger);
+
+    var hero= gsap.timeline({
         scrollTrigger: {
-            trigger: "landing_content",
-            markers:true,
+            trigger: "#landing_content",
+            markers:false,
             scrub:true,
             pin:true,
             start: "top top",
-            end: "+=600",
+            end: "+=1000",
         }
-    })
-    .to("#landing_content",{autoAlpha:0,duration:1, stagger:1})
-    .to("#scroll_prompt_grp",{autoAlpha:0,duration:1});
+    });
+
+    useEffect(() => {
+        hero
+        .to("#landing_content",{autoAlpha:0,duration:1, stagger:1})
+        .to("#scroll_prompt_grp",{autoAlpha:0,duration:1});
+    }, []);
+    
 
     return (
         <section id="landing" >

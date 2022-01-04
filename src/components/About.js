@@ -27,9 +27,9 @@ export default function About() {
                 ease: "linear",
                 scrollTrigger: {
                     trigger: "#main_trigger",
-                    markers: true,
+                    markers: false,
                     scrub: true,
-                    start: "top center+=20%",
+                    start: "top 90%",
                     end: "bottom center+=20%"
                 }
             });
@@ -45,10 +45,9 @@ export default function About() {
                 ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
-
                     markers: false,
                     scrub: true,
-                    start: "top center+=20%",
+                    start: "top 90%",
                     end: "bottom center+=20%"
 
                 }
@@ -63,10 +62,9 @@ export default function About() {
                 ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
-
                     markers: false,
                     scrub: true,
-                    start: "top center+=20%",
+                    start: "top 90%",
                     end: "bottom center+=20%"
 
                 }
@@ -82,10 +80,9 @@ export default function About() {
                 ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
-
                     markers: false,
                     scrub: true,
-                    start: "top center+=20%",
+                    start: "top 90%",
                     end: "bottom center+=20%"
 
                 }
@@ -100,10 +97,9 @@ export default function About() {
                 ease: "linear",
                 scrollTrigger: {
                     trigger: currElement.querySelector("#main_trigger"),
-
                     markers: false,
                     scrub: true,
-                    start: "top center+=20%",
+                    start: "top 90%",
                     end: "bottom center+=20%"
 
                 }
