@@ -9,11 +9,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 export default function About() {
-
-
     gsap.registerPlugin(ScrollTrigger);
     const ref = useRef(null);
-
 
     useEffect(() => {
         const currElement = ref.current;
@@ -116,7 +113,7 @@ export default function About() {
                         <h1 id="text_1" className="title-font lg:text-6xl text-3xl font-medium text-white">
                             Hi I'm Sean
                         </h1>
-                        <h1 id="text_2" className="title-font lg:text-4xl text-3xl mt-5 xl:mb-10 mb-5 font-medium text-yellow-500">
+                        <h1 id="text_2" className="title-font lg:text-4xl text-3xl mt-5 xl:mb-10 mb-5 font-medium text-custom_orange">
                             I love to create applications and more using programming
                         </h1>
                         <div id="text_3">
@@ -130,11 +127,11 @@ export default function About() {
 
                     <div id="buttons_1" className="flex justify-center mt-8">
                         <a href="#contact"
-                            className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
+                            className="inline-flex text-white bg-custom_orange border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
                             Work With Me
                         </a>
                         <a href="#projects"
-                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-900 hover:text-white rounded text-lg">
+                            className="ml-4 inline-flex text-pure_white bg-custom_dark_blue border-0 py-2 px-6 focus:outline-none hover:bg-custom_light_blue hover:text-white rounded text-lg">
                             See My Past Work
                         </a>
                         <SocialIcon url='https://www.linkedin.com/in/sean-tang-s96/' className='ml-4 inline-flex' />
