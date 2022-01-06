@@ -117,7 +117,7 @@ export default function About() {
                             I love to create applications and more using programming
                         </h1>
                         <div id="text_3">
-                            <p id="mainText" className="mb-0 leading-relaxed">
+                            <p id="mainText" className="mb-0 text-pure_white leading-relaxed">
                                 I'm currently working as a backend Software Engineer at <em>PayPal Singapore</em>.<br />
 
                                 I love finding applications for my programming to create cool stuff from games, web apps and so on.
@@ -127,7 +127,7 @@ export default function About() {
 
                     <div id="buttons_1" className="flex justify-center mt-8">
                         <a href="#contact"
-                            className="inline-flex text-white bg-custom_orange border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
+                            className="inline-flex text-pure_white bg-custom_orange border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
                             Work With Me
                         </a>
                         <a href="#projects"
