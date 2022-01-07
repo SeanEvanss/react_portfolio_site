@@ -8,7 +8,8 @@ export const skills = [
     "ReactJS", "NodeJS+Express",
     "MongoDB","Android Studio",
     "Flutter", "Python", 
-    "Tensroflow/Keras", "Unity"
+    "Tensroflow/Keras", "Unity",
+    "Spring Boot", "Flask",
 ];
 
 export const projects = [
