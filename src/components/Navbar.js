@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 import { Link as LinkScroller, animateScroll as scroll } from "react-scroll";
 
 export default function Navbar() {
-
+    
     return (
         <header className="bg-pure_black md:sticky top-0 z-10">
             <div className="flex xl:p-6 md:p-3 flex-row items-center">
                 <div className="title-font font-medium text-pure_white mb-4 md:mb-0">
-                    <Link to="/react_portfolio_site/" className="ml-3 text-xl">
+                    <Link to="/react_portfolio_site/" onClick={scroll.scrollToTop} className="ml-3 text-xl">
                         Sean Tang
                     </Link>
                 </div>
