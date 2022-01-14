@@ -57,9 +57,10 @@ export const feedCards=[
     {
         title: "What's this page about",
         image: post1,
-        description: "So why ruin a single page application with another page ?"
+        upload_time:"13-01-2021 01:30am",
+        description: "So why ruin a single page application with another page ? \n"
         +" Well I realised that I wanted an easy way to update people about what projects I'm currently working on for both software and non software projects."
-        +" And since I don't want to annony my friends on facebook or twitter, figured I'd do it myself.  So here you go.",
+        +" And since I don't want to annony my friends on facebook or twitter, figured I'd do it myself. \n \n So here you go.",
     }
 ];
 
