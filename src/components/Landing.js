@@ -1,4 +1,4 @@
-import React, {useRef, useEffect } from 'react'
+import React, {useEffect } from 'react'
 import "./styles/Landing.css"
 import { ArrowDownIcon } from '@heroicons/react/solid';
 import { gsap } from 'gsap';
