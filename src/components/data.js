@@ -4,6 +4,7 @@ import scrapper from "./resources/new_scraper.gif"
 import flappy from "./resources/flappy.gif"
 
 import post1 from "./resources/background.jpeg"
+import post2 from "./resources/post2.jpg"
 
 export const skills = [
     "C/C++", "Java",
@@ -46,10 +47,7 @@ export const projects = [
         image_link: flappy,
         link: "https://github.com/SeanEvanss/flappy_bird_NEAT",
         key:3
-    },
-    
-    
-    
+    },            
 ];
 
 //This will eventually be from a backend database
@@ -61,6 +59,17 @@ export const feedCards=[
         description: "So why ruin a single page application with another page ? \n"
         +" Well I realised that I wanted an easy way to update people about what projects I'm currently working on for both software and non software projects."
         +" And since I don't want to annony my friends on facebook or twitter, figured I'd do it myself. \n \n So here you go.",
+    },
+    {
+        title: "This has been a fun week...",
+        image: post2,
+        upload_time:"16-01-2021 04:54am",
+        description: "This has been a fun week. \n"+
+        "For those that are unaware, I have a few projects that I'm working on various platforms and one of these projects "+
+        "requires the use of my 3D printr, except that I had not 1, not 2 but 3 points of failure on my ender3 printer (due to wear and tear). "+
+        "I now have my main 3D project suddenly put on hold while I replace 1 major and 2 minor components.\n "+
+        "Will share more pics on the upgrade process in the near future once they arrive."
     }
+
 ];
 

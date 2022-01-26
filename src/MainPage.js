@@ -49,8 +49,7 @@ export default function MainPage() {
             end:"bottom bottom",
             scrub:true,
             markers:false,
-          }
-            
+          }            
         }
       )
     });

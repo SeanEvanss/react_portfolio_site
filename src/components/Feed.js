@@ -16,14 +16,14 @@ export default function Feed() {
 
     return (
         <section id="feed" >
-            <div id="landing_div" className="flex flex-col h-screen justify-center items-center">
+            <div id="landing_div" className="flex flex-col justify-center items-center mx-auto">
                 <h1 className='text-pure_white p-10'>
                     This is the Feed Page<br />
                     work in progress...
                 </h1>
                 <div className="flex flex-wrap md:w-1/2 w-2/3">
                 {feedCards.map((card) => (
-                    <div className='relative h-50 bg-pure_white p-8 rounded-md'>                        
+                    <div className='relative h-50 bg-pure_white p-8 rounded-md mb-10'>                        
                         <h1 className='text-custom_orange text-xl font-bold'>
                             {card.title}
                         </h1>
