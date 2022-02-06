@@ -2,9 +2,11 @@ import vesp from "./resources/vespertine.gif"
 import cursing from "./resources/cursing.gif"
 import scrapper from "./resources/new_scraper.gif"
 import flappy from "./resources/flappy.gif"
+import webrtc from "./resources/webrtc.gif"
 
 import post1 from "./resources/background.jpeg"
 import post2 from "./resources/post2.jpg"
+
 
 export const skills = [
     "C/C++", "Java",
@@ -47,7 +49,16 @@ export const projects = [
         image_link: flappy,
         link: "https://github.com/SeanEvanss/flappy_bird_NEAT",
         key:3
-    },            
+    },
+    {
+        title: "WebRTC- P2P video chat app",
+        subtitle: "NextJS, WebRTC, Firebase",
+        description: "A web application that allows users to chat with each other using WebRTC. The application is built using NextJS with Firebase acting as the signaling server.",
+        image_link: webrtc,
+        link: "https://github.com/SeanEvanss/NEXT-rtc",
+        key:4
+
+    }            
 ];
 
 //This will eventually be from a backend database
